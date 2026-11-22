@@ -82,6 +82,7 @@ void move_snake(snake *s, int x, int y){
 		n->location = current;
 		current = temp;
 	}
+	color_macropixel(to_macropixel(n->location), 0);
 }
 
 pixel *new_apple(snake *s){
