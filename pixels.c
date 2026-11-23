@@ -140,7 +140,7 @@ int check_colision(snake *s){
 		return 1;
 	}
 	segment *n = s->head;
-	while(n->next != NULL){
+	while(n != NULL){
 		n = n->next;
 		if(s->head->location.x == n->location.x && s->head->location.y == n->location.y){
 			return 1;
